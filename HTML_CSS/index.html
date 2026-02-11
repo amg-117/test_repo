@@ -4,10 +4,10 @@
     <!-- Кодировка (обязательно первой строкой) -->
     <meta charset="UTF-8" />
 
-    <!-- Для SEO (поисковики) -->
     <!-- Главный заголовок. Название сайта в шапке -->
     <title>ТЕСТОВЫЙ САЙТ</title>
 
+    <!-- Для SEO (поисковики) -->
     <meta
       name="description"
       content="Краткое описание страницы. 150-160 символов. С ключевыми словами, призывом к действию."
@@ -17,8 +17,8 @@
       content="ключевое слово 1, ключевое слово 2, ключевое слово 3"
     />
     <meta name="author" content="Магомед, ХИНКАЛ-Интернешнл" />
-    <meta name="robots" content="index, follow" />
     <!-- Разрешить индексацию -->
+    <meta name="robots" content="index, follow" />
 
     <!-- Для правильного отображения на мобильных -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,15 +34,12 @@
     />
     <meta
       property="og:image"
-      content="https://test-repo-khaki-kappa.vercel.app/Logo.svg"
+      content="https://amg117-test.vercel.app/Logo.svg"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://test-repo-khaki-kappa.vercel.app"
-    />
+    <meta property="og:url" content="https://amg117-test.vercel.app" />
     <meta property="og:site_name" content="My_test_site" />
 
     <!-- Структурированные данные для поисковиков -->
@@ -52,8 +49,8 @@
         "@type": "Article",
         "headline": "Участники соревнований",
         "description": "Представлены участники спортивного соревнования/турнира.",
-        "image": "https://test-repo-khaki-kappa.vercel.app/my_photo.jpg",
-        "datePublished": "2026-02-11",
+        "image": "https://amg117-test.vercel.app/my_photo.jpg",
+        "datePublished": "2026-11-02",
         "author": {
           "@type": "Person",
           "name": "Ахмедханов Магомед"
@@ -63,16 +60,16 @@
           "name": "Участники соревнований",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://test-repo-khaki-kappa.vercel.app/Logo.svg"
+            "url": "https://amg117-test.vercel.app/Logo.svg"
           }
         }
       }
     </script>
 
     <!-- Фавикон (обязательно) -->
-    <link rel="icon" href="/Logo.ico" type="image/x-icon" />
-    <link rel="icon" href="/Logo.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/Logo.svg" />
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png" />
   </head>
   <body>
     <!-- ШАПКА САЙТА -->
@@ -83,13 +80,42 @@
           <li><a href="#">Главная</a></li>
           <li><a href="#">Обо мне</a></li>
           <li><a href="#">Контакты</a></li>
-          <li><a href="#">Дока-сайт</a></li>
+          <li>
+            <a href="https://doka.guide/html/" target="_blank">Дока-сайт</a>
+          </li>
         </ul>
       </nav>
     </header>
     <!----------------->
     <!-- MAIN раздел -->
     <main>
+      <details>
+        <summary>Расскрывающийся контент</summary>
+        <p>Скрытый контент, который виден при клике.</p>
+        <audio controls loop>
+          <source src="./fon.mp3" type="audio/mp3" />
+          Ваш браузер не поддерживает этот формат аудио
+        </audio>
+
+        <video controls loop width="300px">
+          <source src="./camry.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает этот формат видео
+        </video>
+      </details>
+
+      <!-- 70% -->
+      <progress value="70" max="100"></progress>
+
+      <!-- 60% заполнено -->
+      <meter
+        value="10"
+        min="0"
+        max="100"
+        low="20"
+        high="80"
+        optimum="50"
+      ></meter>
+
       <h1>УЧАСТНИКИ СРЕВНОВАНИЯ</h1>
       <!-- МАГОМЕД -->
       <article>
